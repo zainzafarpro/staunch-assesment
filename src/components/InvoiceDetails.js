@@ -22,6 +22,8 @@ const InvoiceDetails = ({
           value={projectDescription}
           handleChange={handleChange}
           handleBlur={handleBlur}
+          touched={touched.projectDescription}
+          error={errors.projectDescription}
         />
       </div>
       <div className="flex -mx-2 mb-6">

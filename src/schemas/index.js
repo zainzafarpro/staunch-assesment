@@ -25,6 +25,9 @@ export const invoiceSchema = Yup.object().shape({
     .positive()
     .integer()
     .required("Postal code is required"),
+  projectDescription: Yup.string()
+    .min(5)
+    .required("Project Details are required"),
   clientAddress: Yup.string()
     .min(2)
     .max(60)
